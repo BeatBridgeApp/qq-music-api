@@ -1,4 +1,4 @@
-FROM node:12
+FROM node:23
 
 LABEL maintainer = "Rain120 <1085131904@qq.com>"
 
@@ -7,7 +7,7 @@ WORKDIR /
 
 COPY package.json .
 
-RUN yarn install --registry=https://registry.npm.taobao.org
+RUN yarn install
 
 COPY . .
 
